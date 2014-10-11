@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="container" ui-view></div>
+
+
+@section scripts {	
+    @Scripts.Render("~/bundles/angular")
+	@Scripts.Render("~/bundles/app")
+}

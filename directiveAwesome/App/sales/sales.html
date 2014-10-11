@@ -1,0 +1,27 @@
+﻿<div>
+	<h3>Sales Page</h3>
+	<div ng-repeat="sale in items">
+		{{sale.customer}} : {{sale.product}}
+	</div>
+	
+
+	<h3>Custom directive components</h3>	
+	
+	<div class="row">
+		select datetime with jquery
+		<input type="datetime" placeholder="date time" datetimepicker ng-model="datetimevalue"/>		
+	</div>
+	
+	
+	<div class="row">
+		witout jquery, these two input fields are sharing the ng-model, so they will update eachother
+		<input type="datetime" placeholder="date time no jquery" ng-model="datetimevalue"/>
+	</div>
+	
+	<div class="row">
+		simple display datetime below
+		<div>{{datetimevalue}}</div>
+			
+	</div>	
+	
+</div>
